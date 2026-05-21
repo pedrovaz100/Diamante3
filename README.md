@@ -143,8 +143,19 @@ DELETE /itens/{id}
   "listaCompraId": 1
 }
 ```
+---
+
+## ⚡ Cache
+
+A aplicação utiliza Spring Cache para otimizar operações de busca e melhorar a performance das consultas da API.
 
 ---
+## 🔗 HATEOAS
+
+A API utiliza HATEOAS para fornecer links de navegação nas respostas REST, permitindo melhor descoberta e navegação entre recursos.
+
+---
+
 
 ## 👨‍💻 Autor
 
