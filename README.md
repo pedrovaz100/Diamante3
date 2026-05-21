@@ -143,16 +143,6 @@ DELETE /itens/{id}
   "listaCompraId": 1
 }
 ```
----
-## 🌐 Frontend para API
-
-Acesse a aplicação:
-
-Acesso direto: https://gerenciamento-listas-compras-front.vercel.app
-
-
-
-Repositorio do front: https://github.com/pedrovaz100/Gerenciamento-listas-compras-front.git
 
 ---
 
