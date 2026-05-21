@@ -1,0 +1,146 @@
+{
+  "name": "Lista Compras API",
+  "baseUrl": "http://localhost:8080",
+  "endpoints": [
+    {
+      "name": "Health Check",
+      "method": "GET",
+      "path": "/health"
+    },
+    {
+      "name": "Listar Mercados",
+      "method": "GET",
+      "path": "/mercados?page=0&size=10&sort=nome,asc"
+    },
+    {
+      "name": "Buscar Mercado por ID",
+      "method": "GET",
+      "path": "/mercados/{id}"
+    },
+    {
+      "name": "Criar Mercado",
+      "method": "POST",
+      "path": "/mercados",
+      "body": {
+        "nome": "Supermercado Central",
+        "endereco": "Rua das Flores, 100"
+      }
+    },
+    {
+      "name": "Atualizar Mercado",
+      "method": "PUT",
+      "path": "/mercados/{id}",
+      "body": {
+        "nome": "Mercado Atualizado",
+        "endereco": "Avenida Brasil, 500"
+      }
+    },
+    {
+      "name": "Deletar Mercado",
+      "method": "DELETE",
+      "path": "/mercados/{id}"
+    },
+    {
+      "name": "Listar Listas",
+      "method": "GET",
+      "path": "/listas?page=0&size=10&sort=nome,asc"
+    },
+    {
+      "name": "Buscar Lista por ID",
+      "method": "GET",
+      "path": "/listas/{id}"
+    },
+    {
+      "name": "Criar Lista",
+      "method": "POST",
+      "path": "/listas",
+      "body": {
+        "nome": "Compras do mes",
+        "dataCriacao": "2026-04-28",
+        "mercadoId": 1
+      }
+    },
+    {
+      "name": "Atualizar Lista",
+      "method": "PUT",
+      "path": "/listas/{id}",
+      "body": {
+        "nome": "Compras da semana",
+        "dataCriacao": "2026-04-28",
+        "mercadoId": 1
+      }
+    },
+    {
+      "name": "Deletar Lista",
+      "method": "DELETE",
+      "path": "/listas/{id}"
+    },
+    {
+      "name": "Buscar Lista por Nome",
+      "method": "GET",
+      "path": "/listas/busca/nome?nome=compras&page=0&size=10&sort=nome,asc"
+    },
+    {
+      "name": "Buscar Lista por Mercado",
+      "method": "GET",
+      "path": "/listas/busca/mercado/{mercadoId}?page=0&size=10&sort=nome,asc"
+    },
+    {
+      "name": "Resumo de Listas (Projection)",
+      "method": "GET",
+      "path": "/listas/resumo?page=0&size=10&sort=nome,asc"
+    },
+    {
+      "name": "Listar Itens",
+      "method": "GET",
+      "path": "/itens?page=0&size=10&sort=nome,asc"
+    },
+    {
+      "name": "Buscar Item por ID",
+      "method": "GET",
+      "path": "/itens/{id}"
+    },
+    {
+      "name": "Criar Item",
+      "method": "POST",
+      "path": "/itens",
+      "body": {
+        "nome": "Arroz",
+        "quantidade": 2,
+        "preco": 28.9,
+        "listaCompraId": 1
+      }
+    },
+    {
+      "name": "Atualizar Item",
+      "method": "PUT",
+      "path": "/itens/{id}",
+      "body": {
+        "nome": "Feijao",
+        "quantidade": 3,
+        "preco": 9.5,
+        "listaCompraId": 1
+      }
+    },
+    {
+      "name": "Deletar Item",
+      "method": "DELETE",
+      "path": "/itens/{id}"
+    },
+    {
+      "name": "Buscar Item por Nome",
+      "method": "GET",
+      "path": "/itens/busca/nome?nome=arroz&page=0&size=10&sort=nome,asc"
+    },
+    {
+      "name": "Buscar Item por Faixa de Preco",
+      "method": "GET",
+      "path": "/itens/busca/preco?precoMin=5&precoMax=30&page=0&size=10&sort=preco,asc"
+    },
+    {
+      "name": "Buscar Item por Quantidade Minima",
+      "method": "GET",
+      "path": "/itens/busca/quantidade-minima?quantidade=2&page=0&size=10&sort=quantidade,desc"
+    }
+  ]
+}
